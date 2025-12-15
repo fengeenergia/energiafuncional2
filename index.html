@@ -1,320 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnergiaFuncional | Método prático para adultos funcionais cansados</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e3a8a',
-                        secondary: '#d97706',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EnergiaFuncional | Diagnóstico de Energia Funcional</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            energy: '#F59E0B',
+            dark: '#0F172A'
+          }
         }
-    </script>
-    <link rel="stylesheet" href="style.css">
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="font-sans bg-white text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="text-primary font-bold text-xl">EnergiaFuncional</div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#identificacao" class="hover:text-primary transition">Identificação</a>
-                <a href="#diagnostico" class="hover:text-primary transition">Diagnóstico</a>
-                <a href="#funciona" class="hover:text-primary transition">Como Funciona</a>
-            </div>
-            <button class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-b from-primary-50 to-white">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                    Funcional por fora. Esgotado por dentro?
-                </h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-8">
-                    Descubra onde sua energia está sendo desperdiçada — sem terapia e sem mudar sua rotina inteira.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#cta" class="bg-primary hover:bg-primary-700 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 text-center">
-                        Iniciar diagnóstico agora
-                    </a>
-                    <div class="text-sm text-gray-500 flex items-center justify-center">
-                        Leva menos de 5 minutos • Não clínico • Gratuito
-                    </div>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="http://static.photos/office/640x360/1" alt="Profissional produtivo" class="rounded-lg shadow-xl max-w-full h-auto">
-            </div>
-        </div>
-    </section>
+<body class="font-sans bg-gray-50 text-gray-800">
 
-    <!-- Identification Section -->
-    <section id="identificacao" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900">Você se identifica com algum desses?</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="text-secondary mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Você dá conta, mas vive no limite</h3>
-                    <p class="text-gray-600">Consegue cumprir todas as obrigações, mas sempre com a sensação de estar no seu limite.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="text-secondary mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Descansar não resolve mais</h3>
-                    <p class="text-gray-600">Finais de semana e férias já não são suficientes para recuperar sua energia.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="text-secondary mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Energia oscila ao longo do dia</h3>
-                    <p class="text-gray-600">Tem momentos de produtividade seguidos por quedas bruscas de energia.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="text-secondary mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">O foco diminuiu mesmo com esforço</h3>
-                    <p class="text-gray-600">Você se esforça para se concentrar, mas a mente parece estar sempre dispersa.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="text-secondary mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Sua mente nunca desliga</h3>
-                    <p class="text-gray-600">Mesmo quando deveria estar relaxando, seus pensamentos continuam acelerados.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- NAV -->
+<nav class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-primary">EnergiaFuncional</div>
+  </div>
+</nav>
 
-    <!-- Reframing Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
-                <p class="text-lg md:text-xl text-gray-600 mb-8">
-                    Energia não se cria com esforço.<br>
-                    Ela se organiza com método.
-                </p>
-                <div class="bg-primary bg-opacity-10 p-6 rounded-lg border-l-4 border-primary">
-                    <p class="text-gray-800 font-medium">
-                        Adultos funcionais não precisam de mais motivação ou disciplina.<br>
-                        Precisam de um sistema que otimize sua energia existente.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="bg-gradient-to-br from-primary to-dark text-white py-20">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Você funciona.<br>Mas vive no limite?
+    </h1>
 
-    <!-- Diagnosis Section -->
-    <section id="diagnostico" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900">O que é o Diagnóstico de Energia Funcional</h2>
-            
-            <div class="max-w-4xl mx-auto">
-                <p class="text-lg text-gray-600 mb-8 text-center">
-                    Uma análise objetiva que identifica os principais vazamentos de energia em sua rotina, sem jargões clínicos ou soluções genéricas.
-                </p>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-semibold mb-4 text-primary">Você vai descobrir:</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="text-gray-700">Seu principal vazamento de energia</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="text-gray-700">O padrão que mantém seu cansaço</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt=1 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="text-gray-700">O erro mais comum do adulto funcional</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt=1 mr=3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="text-gray-700">Um ajuste simples de alto retorno</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex items-center justify-center">
-                        <img src="http://static.photos/workspace/640x360/2" alt="Diagnóstico de Energia Funcional" class="rounded-lg shadow-md max-w-full h-auto">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <p class="text-lg md:text-xl text-blue-100 mb-8">
+      Descubra onde sua energia está sendo drenada — sem terapia, sem promessas irreais
+      e sem virar sua rotina do avesso.
+    </p>
 
-    <!-- How It Works Section -->
-    <section id="funciona" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900">Como funciona</h2>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center shadow-md mb-4">
-                        <span class="text-primary font-bold text-xl">1</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Questionário rápido</h3>
-                    <p class="text-gray-600">Responda perguntas objetivas sobre sua rotina e padrões de energia.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center shadow-md mb-4">
-                        <span class="text-primary font-bold text-xl">2</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Análise de padrões</h3>
-                    <p class="text-gray-600">Nosso sistema identifica onde sua energia está sendo desperdiçada.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center shadow-md mb=4">
-                        <span class="text-primary font-bold text-xl">3</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Relatório objetivo</h3>
-                    <p class="text-gray-600">Receba insights práticos para otimizar sua energia sem mudar tudo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <a href="#diagnostico"
+       class="inline-block bg-energy hover:bg-amber-500 text-dark font-semibold px-8 py-4 rounded-lg shadow-lg transition">
+       Quero entender minha energia
+    </a>
 
-    <!-- For Whom Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-green-50 p-6 rounded-lg border border-green-100">
-                    <h3 class="text-xl font-semibold mb-4 text-green-800">É para você se:</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Tem uma rotina funcional mas vive cansado</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Prefere soluções práticas a abordagens terapêuticas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mt=1 mr=3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Quer entender antes de agir</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-red-50 p-6 rounded-lg border border-red-100">
-                    <h3 class="text-xl font-semibold mb-4 text-red-800">Não é para você se:</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mt=1 mr=3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Busca soluções mágicas ou milagrosas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mt=1 mr=3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Prefere abordagens clínicas ou terapêuticas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mt=1 mr=3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-gray-700">Não está disposto a fazer ajustes pontuais</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <p class="text-sm text-blue-200 mt-4">
+      Leva menos de 5 minutos • Não clínico • Gratuito
+    </p>
+  </div>
+</section>
 
-    <!-- Final CTA Section -->
-    <section id="cta" class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6">Você não precisa mudar tudo.</h2>
-            <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Precisa entender onde está perdendo energia.
-            </p>
-            <a href="#" class="inline-block bg-white hover:bg-gray-100 text-primary font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">
-                Fazer diagnóstico agora
-            </a>
-        </div>
-    </section>
+<!-- IDENTIFICAÇÃO -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Você se identifica com algum desses?
+    </h2>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <div class="text-xl font-bold mb-2">EnergiaFuncional</div>
-                    <p class="text-gray-400 text-sm">Método prático para adultos funcionais cansados</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition">Termos</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Privacidade</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Contato</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-                © 2023 EnergiaFuncional. Todos os direitos reservados.
-            </div>
-        </div>
-    </footer>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card">
+        <h3>Você dá conta, mas vive no limite</h3>
+        <p>Entrega resultados, mas sempre com sensação de exaustão constante.</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="card">
+        <h3>Descansar não resolve mais</h3>
+        <p>Finais de semana e férias não recuperam sua energia.</p>
+      </div>
+
+      <div class="card">
+        <h3>A energia oscila ao longo do dia</h3>
+        <p>Picos de produtividade seguidos por quedas bruscas.</p>
+      </div>
+
+      <div class="card">
+        <h3>O foco diminuiu mesmo com esforço</h3>
+        <p>Concentrar-se exige cada vez mais energia.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sua mente nunca desliga</h3>
+        <p>Mesmo descansando, o pensamento continua acelerado.</p>
+      </div>
+
+      <div class="card">
+        <h3>Você sabe que poderia render mais</h3>
+        <p>Com a mesma rotina, sente que poderia produzir muito mais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      O erro mais comum
+    </h2>
+
+    <div class="bg-white p-8 rounded-xl shadow">
+      <p class="mb-4">
+        A maioria tenta resolver o cansaço com mais café, mais descanso ou mais esforço.
+        Isso até alivia — mas não resolve.
+      </p>
+
+      <p class="mb-6">
+        O problema não é falta de energia.  
+        É **má distribuição da energia que você já tem**.
+      </p>
+
+      <div class="border-l-4 border-energy pl-4 font-semibold text-lg">
+        Energia não se cria com esforço.  
+        Ela se organiza com método.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNÓSTICO -->
+<section id="diagnostico" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">
+      O que é o Diagnóstico de Energia Funcional
+    </h2>
+
+    <p class="text-gray-600 mb-10">
+      Uma análise objetiva que identifica exatamente onde sua energia está sendo desperdiçada,
+      sem jargões clínicos ou soluções genéricas.
+    </p>
+
+    <div class="bg-blue-50 p-8 rounded-xl text-left">
+      <h3 class="font-semibold mb-4">Você vai descobrir:</h3>
+      <ul class="space-y-3 list-disc list-inside">
+        <li>Seu principal vazamento de energia</li>
+        <li>O padrão que mantém seu cansaço</li>
+        <li>O erro mais comum do adulto funcional</li>
+        <li>Um ajuste simples de alto retorno imediato</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-20 bg-primary text-white text-center">
+  <h2 class="text-3xl font-bold mb-4">
+    Você não precisa mudar tudo.
+  </h2>
+
+  <p class="text-lg mb-8">
+    Precisa entender onde está perdendo energia.
+  </p>
+
+  <a href="#"
+     class="bg-energy hover:bg-amber-500 text-dark font-semibold px-8 py-4 rounded-lg shadow-lg transition">
+     Fazer diagnóstico agora
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-gray-400 py-8 text-center">
+  <p class="font-semibold text-white">EnergiaFuncional</p>
+  <p class="text-sm mt-2">
+    Método prático para adultos funcionais cansados
+  </p>
+  <p class="text-xs mt-4">
+    © 2025 EnergiaFuncional. Todos os direitos reservados.
+  </p>
+</footer>
+
 </body>
 </html>
